@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Felipe Palomino, Richard Ramirez Meza, Cámara de Comercio de Cartagena">
+    <meta name="keywords" content="CCC, Calculadora de Punto de Equilibrio, Punto de Equilibrio">
+    <meta name="description" content="Encuentra las unidades necesarias para cubrir tus costos">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/simbolo.png" sizes="32x32">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Calculadora de Punto de Equilibrio</title>
+</head>
+
+<body>
+    <div class="question_icon">
+        <div class="message">
+            <div class="question" id="question">
+                <a id="link" href="https://drive.google.com/file/d/1-6NYpYN5HK1ng6zK6tPrG4GKR_LI-vk-/view?usp=share_link" target="_blank">¿Tienes dudas?</a>
+            </div>
+            <svg width="45" class="icon" id="bottom" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 511.34 511.34">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: #009D90;
+                        }
+    
+                        .cls-2 {
+                            fill: #fff;
+                        }
+                    </style>
+                </defs>
+                <circle class="cls-1" cx="255.67" cy="255.67" r="255.67" />
+                <ellipse class="cls-2" cx="256.05" cy="254.96" rx="187" ry="182.96" />
+                <path class="cls-1"
+                    d="M238.07,27.41h34.82c6.27,1.8,12.82,1.7,19.19,2.8C352.05,40.6,401.25,69.42,437.9,118c41.53,55,55.31,117.22,41.66,184.69-11.27,55.69-40.29,101.1-85.64,135.33-51.87,39.16-110.54,53.53-174.65,43.5-51.71-8.09-95.52-32-131.11-70.43C56.24,376.61,36.89,336,29.83,289.47c-.79-5.21-.63-10.58-2.48-15.62V238.13c1.28-.79.81-2.11.93-3.23a267.05,267.05,0,0,1,4.16-26.83c10.33-47.14,33.12-87.24,68.53-120C135.43,56.27,176,36.94,222.47,29.89,227.67,29.09,233.05,29.35,238.07,27.41ZM257.34,103c-.93.05-3,.19-5.08.25-30.49.86-56.54,11.87-77,34.67-12,13.38-19.57,29.09-20.24,47.43-.65,17.55,16,30.7,33,26.43,9.66-2.42,14.82-9.34,18.17-18.05,2.72-7.07,5-14.32,8.57-21,5.21-9.83,11-19.19,22-23.59a56.25,56.25,0,0,1,19.63-3.62c15.23-.38,28.7,4.07,38,16.74s11.33,30-3.16,46.14c-9.86,11-21.5,20.1-32.22,30.19-8.78,8.26-17.7,16.45-23.46,27.28-8,15-11.52,30.93-7.45,47.76,2.4,10,11.52,16.31,22.3,16.56,11.94.28,19.9-4.82,23.33-15.4,1.6-4.93,2.57-10.06,3.8-15.11,1.93-7.92,5-15.3,10.81-21.18s11.64-11.5,17.6-17.11c10.18-9.58,20.93-18.61,30.61-28.67,34-35.33,22.48-84.72-10.24-109C306.11,108.63,283.16,103.07,257.34,103Zm-4.52,306.1c17,.54,30.31-12.24,30.78-29.49a29.86,29.86,0,0,0-28.83-30.71c-17.35-.63-31.44,12.21-31.88,29C222.42,395.82,234.58,408.49,252.82,409.06Z"
+                    transform="translate(0 -0.66)" />
+            </svg>
+        </div>
+    </div>
+    <header class="header">
+        <figure>
+          <a href="https://www.cccartagena.org.co/"> <img class="header__logo" src="./images/logo-blanco.png" alt="Logo Cámara de Comercio de Cartagena"> </a>
+        </figure>
+        <nav>
+            <h1 class="header__title main__title">Calculadora de Punto de Equilibrio</h1>
+        </nav>
+    </header>
+
+    <section class="concepts">
+        <h2 class="concepts_title main__title">
+            ¿Cómo funciona?
+        </h2>
+        <p> 
+            La <b>calculadora de Punto de Equilibrio (PE)</b> es un aplicativo desarrollado por el 
+            departamento de investigaciones y el area de Tecnologías de Información y Comunicación (TIC) que permite conocer la
+            cantidad de unidades de producción que la empresa debe vender para cubrir sus
+            costos y obtener ganancias. Para obtener el Punto de Equilibrio (PE), es necesario introducir la información de las
+            siguientes variables: costo fijo, costo variable y precio de venta. </p>
+        <ul>
+            <li><b>Costo fijo:</b> aquel monto que una empresa debe pagar 
+                independientemente de su nivel de operación.</li>
+            <li><b>Costo variable:</b> también llamado costo unitario, es lo que cuesta producir 
+                cada unidad de producto fabricada o vendida. </li>
+            <li><b>Precio de venta:</b> valor monetario que paga el cliente
+                por recibir el bien o servicio.</li>
+        </ul>
+        <div class="recorder">
+            <object class="recorder-video" data="https://www.youtube.com/embed/Wwlh0N8T_9U" type="video/mp4">
+            </object>
+        </div>
+    </section>
+    <aside class="operator ">
+        <h2 class="operator__title main__title">Ingrese aquí sus datos</h2>
+        <form class="operator__forms">
+            <fieldset class="operator__mode">
+                <h4 class="forms__option-title">Modo de Cálculo
+                    <hr>
+                </h4>
+                <label class="forms__option" for="option">
+                    <select name="option" id="option" required>
+                        <option value="" selected>Seleccione su método</option>
+                        <option value="1">Unidades de producto (Q)</option>
+                        <option value="2"> Valor Monetario ($)</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset class="operator__variable">
+                <h4 class="operator__variable-title"> Variables principales:
+                    <hr>
+                </h4>
+                <label class="forms__option" for="fixed_costs">
+                    <span class="forms__option-title">Costo fijo:</span>
+                    <input type="number" min=1 placeholder="Valor en $COP" name="fixed_costs" id="fixed_costs" required>
+                </label>
+                <label class="forms__option" for="sales_prices">
+                    <span class="forms__option-title">Costo unitario:</span>
+                    <input type="number" min=1 placeholder="Valor en $COP" name="unit_costs" id="unit_costs" required>
+                </label>
+                <label class="forms__option" for="unit_costs">
+                    <span class="forms__option-title">Precio de venta</span>
+                    <input type="number" min=1 placeholder="Valor en $COP" name="sales_prices" id="sales_prices" required>
+                </label>
+                <label class="forms__option-bottom" for="forms__bottom">
+                    <input class="operator__forms-bottom" type="submit" name="forms__bottom" id="forms__bottom" value="Calcular">
+                </label>
+            </fieldset>
+        </form>
+    </aside>
+    <aside class="answers">
+        <h2 class=" main__title">Resultados</h2>
+        <div class="screen">
+
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="footer__aside center">
+            <img alt="Logo Cámara de Comercio de Cartagena" title="Cámara de Comercio de Cartagena"
+                class="footer__aside-logo" src="./images/logo_con_nombre.png" loading="lazy">
+        </div>
+        <div class="footer__aside">
+            <ul class="clients">
+                <li class="clients__items">
+                    <img class="clients__items-icon" src="./images/icons/papeles.svg" alt="" loading="lazy"><a
+                        class="footer_links" href="https://www.cccartagena.org.co/pqrsd" >Escríbanos</a>
+                </li>
+                <li class="clients__items">
+                    <img class="clients__items-icon" src="./images/icons/bocina.svg" alt="" loading="lazy"><a
+                        class="footer_links" href="https://www.cccartagena.org.co/">Llámenos (+57) (5)6501110</a>
+                </li>
+                <li class="clients__items">
+                    <img class="clients__items-icon" src="./images/icons/globoText.svg" alt="" loading="lazy"><a
+                        class="footer_links" href="https://www.cccartagena.org.co/preguntas-frecuentes/">Preguntas frecuentes</a>
+                </li>
+                <li class="clients__items">
+                    <img class="clients__items-icon" src="./images/icons/check.svg" alt="" loading="lazy"><a class="footer_links" href="https://www.cccartagena.org.co/ley-de-transparencia/">Ley
+                        de transparencia</a>
+                </li>
+                <li class="clients__items">
+                    <img class="clients__items-icon" src="./images/icons/import.svg" alt="" loading="lazy"><a class="footer_links" href="https://www.cccartagena.org.co/pqrsd/">PQRS
+                        atención al cliente</a>
+                </li>
+                <li class="clients__items">
+                    <img class="clients__items-icon" src="./images/icons/papel.svg" alt="" loading="lazy"><a
+                        class="footer_links" href="https://www.cccartagena.org.co/pqrsd">Reportes judiciales</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__aside">
+            <h4 class="social-media-title footer_links">Síguenos:</h4>
+            <div class="social-media-descripction">
+                <a href="https://www.facebook.com/camcartagena/" target="_blank">
+                    <img class="social-media-icons" src="./images/icons/facebook.svg" alt="" loading="lazy">.
+                </a>
+                <a href="https://twitter.com/camcartagena/">
+                    <img class="social-media-icons" src="./images/icons/twitter.svg" alt="" loading="lazy">.
+                </a>
+                <a href="https://www.instagram.com/cam_cartagena/"  target="_blank">
+                    <img class="social-media-icons" src="./images/icons/instagram.svg" alt="" loading="lazy">.
+                </a>
+                <a href="https://co.linkedin.com/company/camcartagena" target="_blank">
+                    <img class="social-media-icons" src="./images/icons/linkedin.svg" alt="" loading="lazy">.
+                </a>
+            </div>
+            <div class="location">
+                <p class="location_info footer_links"> Sedes y puntos de atención</p>
+                <p class="location_info footer_links"> Cl. 28 #27-23, Manga. Cartagena de Indias, Bolívar.</p>
+                <p class="location_info footer_links"> 215, Cl. 31 #54, Santa Lucía. Cartagena de Indias, Bolívar.</p>
+            </div>
+            <ul class="clients">
+                <li class="clients__items"><a class="footer_links" href="https://www.cccartagena.org.co/proteccion-de-datos-personales/" target="_blank">Protección de datos personales</a></li>
+                <li class="clients__items"><a class="footer_links" href="https://www.cccartagena.org.co/proteccion-de-datos-personales/" target="_blank">Aviso de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./Javascript/boton.js"></script>
+    <script src="./Javascript/calculos.js"></script>
+</body>
+</html>
