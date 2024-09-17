@@ -64,8 +64,8 @@ Las contribuciones son bienvenidas. Para contribuir, sigue estos pasos:
 
 ## Licencia
 
-Desarrollado por: Richard Ramirez Meza y Juan Palomino
-Este proyecto está licenciado bajo la Licencia MIT.
+- Desarrollado por: Richard Ramirez Meza y Juan Palomino.
+- Este proyecto está licenciado bajo la Licencia MIT.
 
 
 
