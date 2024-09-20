@@ -39,32 +39,9 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 2. Selecciona el método de cálculo: Unidades de Producto o Valor Monetario.
 3. Haz clic en el botón de calcular para obtener los resultados.
 
-## Validaciones
-
-El formulario realiza las siguientes validaciones:
-
-- Los valores deben ser positivos.
-- El precio de venta unitario debe ser mayor que el costo variable unitario.
-- Los campos no deben estar vacíos.
-
-## Ejemplos de Resultados
-
-- **Unidades de Producto**: "Se necesitan vender 2.500 unidades para alcanzar el punto de equilibrio."
-- **Valor Monetario**: "La empresa debe generar $1.000.000 COP para alcanzar el punto de equilibrio."
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Para contribuir, sigue estos pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/mi-nueva-caracteristica`).
-3. Realiza tus cambios y haz commit (`git commit -am 'Añadí nueva característica'`).
-4. Empuja tu rama (`git push origin feature/mi-nueva-caracteristica`).
-5. Crea un pull request.
-
 ## Licencia
 
-- Desarrollado por: Richard Ramirez Meza y Juan Palomino.
+- Desarrollado por: Richard Ramirez Meza y Juan Palomino (https://github.com/XenoJF).
 - Este proyecto está licenciado bajo la Licencia MIT.
 
 
